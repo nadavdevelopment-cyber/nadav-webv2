@@ -1,0 +1,156 @@
+.page {
+  min-height: 100dvh;
+  background: #fff;
+  color: #17181c;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 92px;
+  margin: 0 5.4%;
+  border-bottom: 1px solid #e7e8eb;
+}
+
+.brand {
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: -1.8px;
+}
+
+.brandSymbol {
+  margin-left: 3px;
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #5f646e;
+  font-size: 13px;
+}
+
+.main {
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 100px 0 120px;
+}
+
+.eyebrow {
+  margin-bottom: 24px;
+  color: #7b808a;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .14em;
+}
+
+.main h1 {
+  max-width: 660px;
+  margin: 0;
+  font-size: clamp(42px, 6vw, 70px);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: 1.03;
+}
+
+.lead {
+  max-width: 650px;
+  margin: 28px 0 58px;
+  color: #747983;
+  font-size: 17px;
+}
+
+.section {
+  padding: 27px 0 30px;
+  border-top: 1px solid #e6e7ea;
+}
+
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+.section p,
+.section li {
+  color: #636974;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.section ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.section a {
+  color: #25282e;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 5.4%;
+  padding: 32px 0;
+  border-top: 1px solid #e7e8eb;
+  color: #8a8f98;
+  font-size: 11px;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 760px) {
+  .header {
+    min-height: 74px;
+    margin: 0 6%;
+  }
+
+  .brand {
+    font-size: 26px;
+  }
+
+  .brandSymbol {
+    display: none;
+  }
+
+  .main {
+    width: min(100% - 32px, 760px);
+    padding: 70px 0 84px;
+  }
+
+  .main h1 {
+    font-size: 43px;
+  }
+
+  .lead {
+    margin: 24px 0 44px;
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 24px 0 26px;
+  }
+
+  .section p,
+  .section li {
+    font-size: 14px;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 6%;
+    padding-bottom: calc(32px + env(safe-area-inset-bottom));
+  }
+}
