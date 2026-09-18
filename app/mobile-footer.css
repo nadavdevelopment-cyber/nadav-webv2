@@ -290,3 +290,26 @@
     overflow-y: auto;
   }
 }
+
+/* Desktop: Assistant anclado sobre su launcher */
+@media (min-width: 761px) {
+  [data-slot="dialog-content"].chat-panel,
+  .chat-panel {
+    position: fixed !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: 22px !important;
+    bottom: 82px !important;
+
+    transform: none !important;
+    translate: none !important;
+    margin: 0 !important;
+
+    width: 380px !important;
+    max-width: calc(100vw - 44px) !important;
+    max-height: calc(100dvh - 110px) !important;
+
+    overflow: hidden !important;
+  }
+}
