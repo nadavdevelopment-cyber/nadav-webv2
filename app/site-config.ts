@@ -7,9 +7,8 @@ export const siteConfig = {
   ],
   metrics: { projects: null as number|null, clients: null as number|null, satisfaction: null as number|null, assistantHours: 24 },
   projects: [
-    {name:'MELMAN’S', category:'Gastronomía · E-commerce', description:'Una experiencia con personalidad. Del primer antojo al pedido online.', technologies:['React','E-commerce','Pedidos online'], theme:'melmans', url:'', details:'Concepto demo de una web gastronómica con catálogo, carrito y experiencia de pedidos. La imagen presenta una dirección visual; no corresponde a un cliente contratado.'},
-    {name:'FORMA', category:'Diseño · E-commerce', description:'Un espacio digital donde cada objeto tiene su lugar.', technologies:['React','Catálogo','Diseño responsive'], theme:'forma', url:'', details:'Concepto demo de una tienda de objetos de diseño. Una propuesta editorial centrada en el producto, la navegación y una experiencia de compra simple.'},
-    {name:'PULSE', category:'Sistemas · Dashboard', description:'Menos fricción. Más claridad para tomar decisiones.', technologies:['React','Dashboard','Visualización de datos'], theme:'pulse', url:'', details:'Concepto demo de un panel de gestión. Visualización de ventas y actividad en una interfaz enfocada en la claridad. Los datos de la vista son ilustrativos.'},
+    {name:'BurgerHouse', category:'Gastronomía · E-commerce · NADAV Core', description:'Una experiencia gastronómica con identidad propia, catálogo online y compra directa.', technologies:['E-commerce gastronómico'], theme:'burgerhouse', label:'PRODUCTO DIGITAL', url:process.env.NEXT_PUBLIC_BURGERHOUSE_URL ?? '', details:'Storefront gastronómico conectado a NADAV Core, con una identidad diner contemporánea y un recorrido de compra directo.'},
+    {name:'Carpimono', category:'Carpintería · Sitio institucional · NADAV Core', description:'Sitio institucional diseñado para presentar servicios, trabajos y facilitar el contacto con potenciales clientes.', technologies:['Sitio institucional'], theme:'carpimono', label:'NEGOCIO & SERVICIOS', url:'https://webcarpimono.vercel.app/', details:'Una presencia digital editorial para comunicar servicios, mostrar trabajos y convertir visitas en consultas.'},
   ],
 };
 export const services = [
