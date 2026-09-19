@@ -7,7 +7,7 @@ export const siteConfig = {
   ],
   metrics: { projects: null as number|null, clients: null as number|null, satisfaction: null as number|null, assistantHours: 24 },
   projects: [
-    {name:'BurgerHouse', category:'Gastronomía · E-commerce · NADAV Core', description:'Una experiencia gastronómica con identidad propia, catálogo online y compra directa.', technologies:['E-commerce gastronómico'], theme:'burgerhouse', label:'PRODUCTO DIGITAL', url:process.env.NEXT_PUBLIC_BURGERHOUSE_URL ?? '', details:'Storefront gastronómico conectado a NADAV Core, con una identidad diner contemporánea y un recorrido de compra directo.'},
+    {name:'BurgerHouse', category:'Gastronomía · E-commerce · NADAV Core', description:'Una experiencia gastronómica con identidad propia, catálogo online y compra directa.', technologies:['E-commerce gastronómico'], theme:'burgerhouse', label:'PRODUCTO DIGITAL', url:'https://burgerhouse-seven.vercel.app/', details:'Storefront gastronómico conectado a NADAV Core, con una identidad diner contemporánea y un recorrido de compra directo.'},
     {name:'Carpimono', category:'Carpintería · Sitio institucional · NADAV Core', description:'Sitio institucional diseñado para presentar servicios, trabajos y facilitar el contacto con potenciales clientes.', technologies:['Sitio institucional'], theme:'carpimono', label:'NEGOCIO & SERVICIOS', url:'https://webcarpimono.vercel.app/', details:'Una presencia digital editorial para comunicar servicios, mostrar trabajos y convertir visitas en consultas.'},
   ],
 };
