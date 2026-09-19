@@ -1,5 +1,5 @@
 export const siteConfig = {
-  whatsapp: '', // Número internacional, solo dígitos. Ejemplo de formato: 549...
+  whatsapp: '542216207420', // Número internacional, solo dígitos. Ejemplo de formato: 549...
   whatsappMessage: 'Hola NADAV, estoy interesado/a en desarrollar un proyecto web.',
   founders: [
     { name: 'Dante Carrizo', initials: 'DC', role: 'Cofundador', description: 'Construyendo NADAV.', photo: '', linkedin: '' },
