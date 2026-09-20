@@ -9,6 +9,7 @@ export const siteConfig = {
   projects: [
     {name:'BurgerHouse', category:'Gastronomía · E-commerce · NADAV Core', description:'Una experiencia gastronómica con identidad propia, catálogo online y compra directa.', technologies:['E-commerce gastronómico'], theme:'burgerhouse', label:'PRODUCTO DIGITAL', url:'https://burgerhouse-seven.vercel.app/', details:'Storefront gastronómico conectado a NADAV Core, con una identidad diner contemporánea y un recorrido de compra directo.'},
     {name:'Carpimono', category:'Carpintería · Sitio institucional · NADAV Core', description:'Sitio institucional diseñado para presentar servicios, trabajos y facilitar el contacto con potenciales clientes.', technologies:['Sitio institucional'], theme:'carpimono', label:'NEGOCIO & SERVICIOS', url:'https://webcarpimono.vercel.app/', details:'Una presencia digital editorial para comunicar servicios, mostrar trabajos y convertir visitas en consultas.'},
+    {name:'Vera Studio', category:'Indumentaria · E-commerce · NADAV Core', description:'Una tienda editorial de indumentaria con catálogo, variantes, stock y administración conectada a NADAV Core.', technologies:['E-commerce','NADAV Core','Panel de administración'], theme:'vera', label:'E-COMMERCE & IDENTIDAD', url:'https://nadav-core-vera-studio-ten.vercel.app/', details:'E-commerce de indumentaria con una dirección visual cálida y editorial, catálogo conectado en tiempo real y panel de administración para productos, stock, pedidos y contenido.'},
   ],
 };
 export const services = [
