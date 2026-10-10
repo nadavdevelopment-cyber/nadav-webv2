@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /privacy
+Disallow: /terms
 
+# Allow key discovery routes
+Allow: /services
+Allow: /projects
+
+# Sitemap location
 Sitemap: https://nadav.com.ar/sitemap.xml
