@@ -9,7 +9,7 @@
 .project-visual.vera{background:#e8ddce;color:#211d1a}
 .project-vera .carpimono-preview{position:relative;background:linear-gradient(90deg,rgba(245,239,232,.98) 0 43%,rgba(245,239,232,.08) 43%),url('https://nadav-core-vera-studio-ten.vercel.app/images/vera-hero.webp') center/cover no-repeat}
 .project-vera .carpimono-preview img{opacity:0}
-.project-vera .carpimono-preview::before{content:'Vestirse\A como una misma.';white-space:pre;position:absolute;left:28px;top:82px;z-index:2;width:39%;font-family:Georgia,'Times New Roman',serif;font-size:clamp(31px,3vw,50px);line-height:.94;letter-spacing:-2.4px;color:#211d1a}
+.project-vera .carpimono-preview::before{content:'Dress like\A yourself.';white-space:pre;position:absolute;left:28px;top:82px;z-index:2;width:39%;font-family:Georgia,'Times New Roman',serif;font-size:clamp(31px,3vw,50px);line-height:.94;letter-spacing:-2.4px;color:#211d1a}
 .project-vera .carpimono-preview::after{content:'VERA STUDIO';position:absolute;left:28px;bottom:27px;z-index:2;font-size:9px;letter-spacing:2.2px;font-weight:700;color:#211d1a}
 .project-vera .preview-browser{background:#f8f4eddd;color:#6f6258;border-color:#ffffff70}
 .project-vera .preview-browser b{display:none}

@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import {ArrowLeft} from 'lucide-react';
+import Link from 'next/link';
 import styles from './legal.module.css';
 
 type LegalPageProps={
@@ -12,8 +13,8 @@ type LegalPageProps={
 export default function LegalPage({eyebrow,title,lead,children}:LegalPageProps){
   return <div className={styles.page}>
     <header className={styles.header}>
-      <a className={styles.brand} href="/" aria-label="NADAV inicio">NADAV<span className={styles.brandSymbol}>✳</span></a>
-      <a className={styles.back} href="/"><ArrowLeft size={15}/> Volver al sitio</a>
+      <Link className={styles.brand} href="/" aria-label="NADAV home">NADAV<span className={styles.brandSymbol}>✳</span></Link>
+      <Link className={styles.back} href="/"><ArrowLeft size={15}/> Back to website</Link>
     </header>
     <main className={styles.main}>
       <div className={styles.eyebrow}>{eyebrow}</div>
@@ -22,8 +23,8 @@ export default function LegalPage({eyebrow,title,lead,children}:LegalPageProps){
       {children}
     </main>
     <footer className={styles.footer}>
-      <span>© {new Date().getFullYear()} NADAV. Todos los derechos reservados.</span>
-      <nav className={styles.legalLinks} aria-label="Enlaces legales"><a href="/privacidad">Privacidad</a><a href="/terminos">Términos</a></nav>
+      <span>© {new Date().getFullYear()} NADAV. All rights reserved.</span>
+      <nav className={styles.legalLinks} aria-label="Legal links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
     </footer>
   </div>;
 }

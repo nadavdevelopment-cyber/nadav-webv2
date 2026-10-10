@@ -436,3 +436,47 @@
     transition: none;
   }
 }
+
+/* Product previews for NADAV's two platform offerings */
+.project-visual.booking{background:#d8e4dd;color:#163b31}
+.booking-preview{position:absolute;inset:0;overflow:hidden;background:#d8e4dd;color:#173b32}
+.booking-brand{position:absolute;left:7%;top:19%;font-size:clamp(15px,1.3vw,21px);font-weight:800;letter-spacing:-.06em}
+.booking-brand span{margin-left:5px;font-size:8px;font-weight:600;letter-spacing:.12em}
+.booking-message{position:absolute;left:7%;bottom:12%;font-size:clamp(25px,2.7vw,43px);font-weight:500;letter-spacing:-.055em;line-height:.95}
+.booking-message em{color:#fff;font-style:normal}
+.booking-widget{position:absolute;top:12%;right:6%;bottom:10%;width:42%;padding:7% 5%;border:1px solid #ffffff80;border-radius:13px;background:#f8faf8;color:#1e302b;box-shadow:0 20px 50px #264b3d24}
+.booking-widget>.widget-label{display:block;margin-bottom:9%;color:#73817c;font-size:7px;letter-spacing:.14em}
+.booking-widget>strong{font-size:clamp(13px,1.2vw,18px);font-weight:600}
+.booking-service{display:flex;align-items:center;justify-content:space-between;margin-top:8%;padding:9% 0;border-block:1px solid #dfe5e1;font-size:clamp(9px,.85vw,13px)}
+.booking-service span{display:grid;gap:3px}.booking-service small{color:#858e8b;font-size:7px}.booking-service b{font-size:19px;font-weight:400}
+.booking-days{display:flex;gap:5px;margin-top:8%}.booking-days i{display:grid;flex:1;place-items:center;gap:3px;padding:7px 2px;border:1px solid #dfe4e1;border-radius:5px;font-size:6px;font-style:normal}.booking-days i.active{background:#1d4b3e;color:#fff}.booking-days small{font-size:9px;font-weight:600}
+.booking-times{display:flex;gap:5px;margin-top:7%}.booking-times span{flex:1;padding:7px 2px;border:1px solid #cdd7d2;border-radius:4px;text-align:center;font-size:7px}
+
+.project-visual.food{background:#f0c94c;color:#171512}
+.food-preview{position:absolute;inset:0;overflow:hidden;background:#f0c94c;color:#171512}
+.food-brand{position:absolute;left:7%;top:18%;font-size:clamp(17px,1.5vw,23px);font-weight:900;letter-spacing:-.08em}.food-brand span{color:#b12a22}
+.food-copy{position:absolute;left:7%;bottom:12%}.food-copy small{display:block;margin-bottom:11px;font-size:7px;font-weight:800;letter-spacing:.16em}.food-copy strong{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(33px,3.6vw,56px);letter-spacing:-.035em;line-height:.84}.food-copy em{color:#b12a22;font-style:normal}
+.food-order{position:absolute;top:15%;right:6%;bottom:12%;width:39%;padding:7% 5%;border:2px solid #171512;background:#fff8e8;box-shadow:8px 8px 0 #b12a22;transform:rotate(1.5deg)}
+.food-order>span{font-size:7px;font-weight:800;letter-spacing:.13em}.food-order>strong{display:block;margin:8% 0 11%;font-size:clamp(13px,1.25vw,19px)}.food-order>div{display:flex;align-items:center;gap:6px;padding:8% 0;border-top:1px solid #ded5c2;font-size:clamp(7px,.7vw,10px)}.food-order div i{width:5px;height:5px;border:1px solid #171512;border-radius:50%}.food-order div b{margin-left:auto}.food-order>small{display:block;padding-top:9%;border-top:1px solid #171512;font-size:7px;font-weight:700}
+
+.vera-preview{position:absolute;inset:0;padding:8% 7%;overflow:hidden;background:#eee6dc;color:#211d1a}
+.vera-preview::after{position:absolute;right:7%;bottom:-8%;width:43%;height:85%;border-radius:50% 50% 0 0;background:#c9b7a3;content:''}
+.vera-preview>span{font-family:Georgia,'Times New Roman',serif;font-size:clamp(16px,1.5vw,24px)}
+.vera-preview>strong{position:absolute;z-index:1;left:7%;top:35%;font-family:Georgia,'Times New Roman',serif;font-size:clamp(31px,3.2vw,51px);font-weight:400;letter-spacing:-.045em;line-height:.95}.vera-preview em{font-weight:400}.vera-preview>small{position:absolute;z-index:1;left:7%;bottom:10%;font-size:7px;font-weight:700;letter-spacing:.18em}
+.product-feature .project-kicker{background:#17181c;color:#fff}
+
+/* Email and form lead the contact experience; WhatsApp remains secondary. */
+.contact-copy>p{max-width:500px}
+.contact-channels{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.contact-channels .button{justify-content:flex-start}
+.secondary-contact{display:inline-flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #cbd0d8;background:transparent;color:#5b616d;font-size:13px}
+.direct-email{display:inline-block;margin-top:17px;color:#737985;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.contact-note{margin-top:75px}
+
+@media(max-width:1100px){.nav-links{gap:15px}.nav-cta{gap:14px}}
+@media(max-width:760px){
+  .booking-message{font-size:29px}.booking-widget{top:15%;right:4%;bottom:9%;width:45%;padding:9% 5%}.booking-brand{top:16%}
+  .food-copy strong{font-size:36px}.food-order{top:17%;right:4%;bottom:10%;width:42%;padding:9% 5%}.food-brand{top:16%}
+  .vera-preview>strong{font-size:34px}
+  .contact-channels{gap:18px}.direct-email{font-size:11px}
+}

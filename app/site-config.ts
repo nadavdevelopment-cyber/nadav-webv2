@@ -1,34 +1,101 @@
 export const siteConfig = {
-  whatsapp: '542216207420', // Número internacional, solo dígitos. Ejemplo de formato: 549...
-  whatsappMessage: 'Hola NADAV, estoy interesado/a en desarrollar un proyecto web.',
+  email: 'nadavdevelopment@gmail.com',
+  whatsapp: '542216207420',
+  whatsappMessage: 'Hi NADAV, I would like to discuss a digital project.',
   founders: [
-    { name: 'Dante Carrizo', initials: 'DC', role: 'Cofundador', description: 'Construyendo NADAV.', photo: '', linkedin: '' },
-    { name: 'Gonzalo Gaitan', initials: 'GG', role: 'Cofundador', description: 'Construyendo NADAV.', photo: '', linkedin: '' },
+    { name: 'Dante Carrizo', initials: 'DC', role: 'Co-founder', description: 'Building NADAV.', photo: '', linkedin: '' },
+    { name: 'Gonzalo Gaitan', initials: 'GG', role: 'Co-founder', description: 'Building NADAV.', photo: '', linkedin: '' },
   ],
-  metrics: { projects: null as number|null, clients: null as number|null, satisfaction: null as number|null, assistantHours: 24 },
+  metrics: { projects: null as number | null, clients: null as number | null, satisfaction: null as number | null, assistantHours: 24 },
   projects: [
-    {name:'BurgerHouse', category:'Gastronomía · E-commerce · NADAV Core', description:'Una experiencia gastronómica con identidad propia, catálogo online y compra directa.', technologies:['E-commerce gastronómico'], theme:'burgerhouse', label:'PRODUCTO DIGITAL', url:'https://burgerhouse-seven.vercel.app/', details:'Storefront gastronómico conectado a NADAV Core, con una identidad diner contemporánea y un recorrido de compra directo.'},
-    {name:'Carpimono', category:'Carpintería · Sitio institucional · NADAV Core', description:'Sitio institucional diseñado para presentar servicios, trabajos y facilitar el contacto con potenciales clientes.', technologies:['Sitio institucional'], theme:'carpimono', label:'NEGOCIO & SERVICIOS', url:'https://webcarpimono.vercel.app/', details:'Una presencia digital editorial para comunicar servicios, mostrar trabajos y convertir visitas en consultas.'},
-    {name:'Vera Studio', category:'Indumentaria · E-commerce · NADAV Core', description:'Una tienda editorial de indumentaria con catálogo, variantes, stock y administración conectada a NADAV Core.', technologies:['E-commerce','NADAV Core','Panel de administración'], theme:'vera', label:'E-COMMERCE & IDENTIDAD', url:'https://nadav-core-vera-studio-ten.vercel.app/', details:'E-commerce de indumentaria con una dirección visual cálida y editorial, catálogo conectado en tiempo real y panel de administración para productos, stock, pedidos y contenido.'},
-    {name:'Casa Aurelia', category:'Hospitality · Sitio editorial · Experiencia inmersiva', description:'Un refugio de doce suites en la Patagonia con un sitio editorial bilingüe: narrativa propia, coreografía de scroll y consulta de estadías.', technologies:['Sitio editorial','Bilingüe ES/EN','Animación & scroll'], theme:'casa-aurelia', label:'HOSPITALITY & EDITORIAL', url:'https://casa-aurelia-snowy.vercel.app/', details:'Experiencia editorial para un refugio de doce suites a orillas de un lago patagónico: contenido completo en español e inglés, coreografía de scroll con GSAP y Lenis, dirección artística propia y un flujo de consulta de estadía con validación de fechas.'},
+    {
+      name: 'NADAV Booking',
+      category: 'Booking platform · Custom websites',
+      description: 'A custom website and booking experience with services, staff, live availability, appointment scheduling, and business-specific demos.',
+      technologies: ['Services', 'Staff', 'Availability', 'Scheduling'],
+      theme: 'booking',
+      label: 'NADAV PRODUCT',
+      url: 'https://nadav-booking.vercel.app/',
+      details: 'A flexible booking platform that brings services, professionals, availability, scheduling, and a custom-branded website into one seamless customer experience.',
+    },
+    {
+      name: 'NADAV Food',
+      category: 'Restaurant ordering · Operations',
+      description: 'A custom restaurant storefront with menu options, pickup and delivery ordering, stock controls, and tools for managing daily orders.',
+      technologies: ['Menu & options', 'Pickup & delivery', 'Order management'],
+      theme: 'food',
+      label: 'NADAV PRODUCT',
+      url: 'https://nadav-food.vercel.app/',
+      details: 'A digital ordering system with branded menus, product options, pickup and delivery workflows, stock controls, and tools for managing restaurant orders.',
+    },
+    {
+      name: 'BurgerHouse',
+      category: 'Food & beverage · E-commerce',
+      description: 'A bold restaurant experience with an online catalog and a direct path to purchase.',
+      technologies: ['Restaurant e-commerce'],
+      theme: 'burgerhouse',
+      label: 'DIGITAL PRODUCT',
+      url: 'https://burgerhouse-seven.vercel.app/',
+      details: 'A restaurant storefront with a contemporary diner identity and a straightforward ordering journey.',
+    },
+    {
+      name: 'Carpimono',
+      category: 'Craft & services · Business website',
+      description: 'An editorial business site built to explain services, showcase work, and turn visits into inquiries.',
+      technologies: ['Business website'],
+      theme: 'carpimono',
+      label: 'BUSINESS WEBSITE',
+      url: 'https://webcarpimono.vercel.app/',
+      details: 'A focused digital presence that communicates custom woodworking services and makes it easy for prospective customers to get in touch.',
+    },
+    {
+      name: 'Vera Studio',
+      category: 'Fashion · E-commerce',
+      description: 'An editorial storefront with products, variants, inventory, and connected administration.',
+      technologies: ['E-commerce', 'NADAV Core', 'Admin dashboard'],
+      theme: 'vera',
+      label: 'E-COMMERCE & IDENTITY',
+      url: 'https://nadav-core-vera-studio-ten.vercel.app/',
+      details: 'A warm, editorial fashion store with a live catalog and tools for managing products, inventory, orders, and content.',
+    },
+    {
+      name: 'Casa Aurelia',
+      category: 'Hospitality · Editorial website',
+      description: 'A bilingual hospitality website shaped around story, atmosphere, and a direct path to stay inquiries.',
+      technologies: ['Hospitality website', 'Bilingual experience', 'Stay inquiries'],
+      theme: 'aurelia',
+      label: 'IMMERSIVE WEBSITE',
+      url: 'https://casa-aurelia-snowy.vercel.app/',
+      details: 'An editorial website for a twelve-suite Patagonian retreat, with immersive storytelling, considered motion, and a focused stay-inquiry path.',
+    },
   ],
 };
+
 export const services = [
- ['Desarrollo web','Sitios rápidos, modernos, escalables y hechos a la medida de tu negocio.'],
- ['E-commerce','Tiendas online con catálogo, carrito, pagos y administración.'],
- ['Sistemas para gastronomía','Menús digitales, pedidos, delivery y gestión de comandas.'],
- ['Landing pages','Una experiencia enfocada en convertir visitas en oportunidades.'],
- ['Sistemas personalizados','Dashboards, automatizaciones y herramientas que simplifican tu trabajo.'],
- ['Mantenimiento','Actualizaciones, soporte y optimización para seguir creciendo.'],
-];
+  ['Custom websites', 'Fast, focused websites built around your business, customers, and goals.'],
+  ['E-commerce', 'Online stores with the catalog, checkout, payments, and management tools you need.'],
+  ['Booking systems', 'Branded scheduling experiences for services, staff, availability, and appointments.'],
+  ['Restaurant ordering', 'Custom menus and ordering flows for pickup, delivery, and restaurant operations.'],
+  ['Business software', 'Dashboards, workflows, and internal tools shaped around how your team works.'],
+  ['Optimization & support', 'Ongoing improvements, maintenance, and technical support after launch.'],
+] as const;
+
 export const faqs = [
- {q:'¿Qué servicios ofrecen?', keys:['servicio','hacen','ofrecen'], a:'Diseñamos y desarrollamos sitios web, tiendas online, sistemas para gastronomía, landing pages y sistemas personalizados. También ofrecemos mantenimiento.'},
- {q:'¿Cuánto cuesta una web?', keys:['precio','cuesta','costo','presupuesto','cobran'], a:'Cada proyecto se cotiza según su alcance, funcionalidades y contenido. Contanos tu idea en el formulario y el equipo podrá preparar una propuesta. No tenemos una tarifa única publicada.'},
- {q:'¿Cuánto tarda un proyecto?', keys:['tiempo','tarda','plazo','demora'], a:'Los plazos dependen del alcance y de los contenidos disponibles. Definimos un cronograma con vos antes de comenzar; el equipo puede estimarlo al conocer tu proyecto.'},
- {q:'¿Qué incluye el servicio?', keys:['incluye','incluido','dominio','hosting'], a:'Trabajamos en estrategia, diseño, desarrollo y lanzamiento. Las funcionalidades, revisiones, hosting, dominio y soporte incluidos se detallan en cada propuesta.'},
- {q:'¿Desarrollan tiendas online?', keys:['tienda','ecommerce','e-commerce','pago','carrito'], a:'Sí. Desarrollamos tiendas con catálogo, carrito, pagos y panel de administración, con integraciones definidas según las necesidades de tu negocio.'},
- {q:'¿Hacen mantenimiento?', keys:['mantenimiento','soporte','actualiza'], a:'Sí. Podemos acompañarte con actualizaciones, mejoras y optimización continua. La disponibilidad del equipo y los tiempos de respuesta se acuerdan en cada plan. Yo soy el asistente automático disponible 24/7.'},
- {q:'¿Cómo inicio un proyecto?', keys:['empez','inici','contrat','proyecto'], a:'Completá el formulario con tu idea, tipo de proyecto y presupuesto aproximado. Nuestro equipo podrá conversar con vos para definir los próximos pasos.'},
- {q:'¿Cómo los contacto?', keys:['contact','whatsapp','hablar','humano','email'], a:'Podés escribir desde la sección Contacto. Si el canal de WhatsApp está habilitado, su botón te lleva directamente a conversar con NADAV.'},
+  { q: 'What does NADAV build?', keys: ['service', 'build', 'offer', 'do you do'], a: 'We design and build custom websites, e-commerce stores, booking systems, restaurant ordering systems, and business software. We also support and improve products after launch.' },
+  { q: 'How much does a website cost?', keys: ['price', 'cost', 'budget', 'rate', 'charge'], a: 'Pricing depends on scope, content, integrations, and functionality. Share a few project details through the contact form and we will recommend the right starting point—without forcing your business into a preset package.' },
+  { q: 'How long does a project take?', keys: ['time', 'long', 'timeline', 'deadline', 'weeks'], a: 'Timelines vary by scope and how quickly content and feedback are available. Before work begins, we define milestones and a clear delivery plan for your project.' },
+  { q: 'What is included?', keys: ['include', 'domain', 'hosting', 'content'], a: 'Every proposal defines strategy, design, development, launch, revisions, and any hosting, domain, content, or support needs. You will know exactly what is included before the project starts.' },
+  { q: 'Do you build online stores?', keys: ['store', 'ecommerce', 'e-commerce', 'payment', 'cart', 'shop'], a: 'Yes. We build custom online stores with catalogs, carts, checkout, payments, and management tools. The exact integrations depend on your market and operating needs.' },
+  { q: 'Do you offer ongoing support?', keys: ['maintenance', 'support', 'update', 'ongoing'], a: 'Yes. We can continue with maintenance, improvements, and optimization after launch. Availability and response times are defined in your support plan.' },
+  { q: 'How do I start a project?', keys: ['start', 'begin', 'hire', 'project'], a: 'Use the contact form to tell us what you are building, what needs to change, and your approximate budget. We will review it and follow up by email with the best next step.' },
+  { q: 'How can I contact NADAV?', keys: ['contact', 'whatsapp', 'talk', 'human', 'email'], a: 'Send a project inquiry through the contact form or email us at nadavdevelopment@gmail.com. WhatsApp is also available as a secondary option.' },
 ];
-export function answerQuestion(value:string){const q=value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); if(/^(hola|buenas|buen dia|hey)[! .]*$/.test(q))return '¡Hola! Soy el asistente automático de NADAV. Puedo orientarte sobre servicios, presupuestos y cómo empezar. ¿Qué te gustaría crear?';return faqs.find(f=>f.keys.some(k=>q.includes(k)))?.a || 'No tengo una respuesta específica para esa consulta. Soy un asistente de preguntas frecuentes, no una persona. Contanos los detalles en Contacto para que el equipo pueda ayudarte.';}
+
+export function answerQuestion(value: string) {
+  const question = value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (/^(hi|hello|hey|good morning|good afternoon)[! .]*$/.test(question)) {
+    return 'Hi! I am NADAV’s automated assistant. I can help with services, budgets, timelines, and getting started. What are you looking to build?';
+  }
+  return faqs.find((faq) => faq.keys.some((key) => question.includes(key)))?.a
+    || 'I do not have a specific answer for that yet. I am an automated FAQ assistant, not a person. Share the details in the contact form and the NADAV team will help you directly.';
+}
